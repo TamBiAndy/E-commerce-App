@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		35EC6DFE83228EEB099D578C /* Pods_E_commerce_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370E931B89E99DBA283F81E0 /* Pods_E_commerce_App.framework */; };
 		A1D32E972CBAD2F600E73873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32E962CBAD2F600E73873 /* AppDelegate.swift */; };
-		A1D32E992CBAD2F600E73873 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32E982CBAD2F600E73873 /* SceneDelegate.swift */; };
-		A1D32E9B2CBAD2F600E73873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32E9A2CBAD2F600E73873 /* ViewController.swift */; };
-		A1D32E9E2CBAD2F600E73873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D32E9C2CBAD2F600E73873 /* Main.storyboard */; };
 		A1D32EA02CBAD2F800E73873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D32E9F2CBAD2F800E73873 /* Assets.xcassets */; };
 		A1D32EA32CBAD2F800E73873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D32EA12CBAD2F800E73873 /* LaunchScreen.storyboard */; };
+		A1D32EAC2CBAD4ED00E73873 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EAB2CBAD4ED00E73873 /* SignInViewController.swift */; };
+		A1D32EAE2CBAD67700E73873 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EAD2CBAD67700E73873 /* SignInViewModel.swift */; };
+		A1D32EB12CBAD72B00E73873 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EB02CBAD72B00E73873 /* Withable.swift */; };
+		A1D32EB32CBAD74200E73873 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EB22CBAD74200E73873 /* UIStackView+Ext.swift */; };
+		A1D32EB52CBAD74E00E73873 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EB42CBAD74E00E73873 /* UIView+Ext.swift */; };
+		A1D32EB72CBAD78C00E73873 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EB62CBAD78C00E73873 /* UIColor+Ext.swift */; };
+		A1D32EB92CBAD79E00E73873 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EB82CBAD79E00E73873 /* UIButton+Ext.swift */; };
+		A1D32EBB2CBAD7AE00E73873 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EBA2CBAD7AE00E73873 /* UIFont+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +26,17 @@
 		66A4EBD5A057B2A0E0D33694 /* Pods-E-commerce-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-App.release.xcconfig"; path = "Target Support Files/Pods-E-commerce-App/Pods-E-commerce-App.release.xcconfig"; sourceTree = "<group>"; };
 		A1D32E932CBAD2F600E73873 /* E-commerce-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-commerce-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D32E962CBAD2F600E73873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1D32E982CBAD2F600E73873 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1D32E9A2CBAD2F600E73873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1D32E9D2CBAD2F600E73873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D32E9F2CBAD2F800E73873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D32EA22CBAD2F800E73873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1D32EA42CBAD2F800E73873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D32EAB2CBAD4ED00E73873 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A1D32EAD2CBAD67700E73873 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		A1D32EB02CBAD72B00E73873 /* Withable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withable.swift; sourceTree = "<group>"; };
+		A1D32EB22CBAD74200E73873 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		A1D32EB42CBAD74E00E73873 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		A1D32EB62CBAD78C00E73873 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		A1D32EB82CBAD79E00E73873 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		A1D32EBA2CBAD7AE00E73873 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		A9B881BFF69DF9B4AD509198 /* Pods-E-commerce-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-App.debug.xcconfig"; path = "Target Support Files/Pods-E-commerce-App/Pods-E-commerce-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +66,6 @@
 				A9B881BFF69DF9B4AD509198 /* Pods-E-commerce-App.debug.xcconfig */,
 				66A4EBD5A057B2A0E0D33694 /* Pods-E-commerce-App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -64,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A1D32E952CBAD2F600E73873 /* E-commerce-App */,
+				A1D32EAF2CBAD71600E73873 /* Helps */,
 				A1D32E942CBAD2F600E73873 /* Products */,
 				7C5A5E09DD6DBFFCCD87C7E5 /* Pods */,
 				042AFF4DF9EFCEA2D5F41F17 /* Frameworks */,
@@ -82,14 +92,34 @@
 			isa = PBXGroup;
 			children = (
 				A1D32E962CBAD2F600E73873 /* AppDelegate.swift */,
-				A1D32E982CBAD2F600E73873 /* SceneDelegate.swift */,
-				A1D32E9A2CBAD2F600E73873 /* ViewController.swift */,
-				A1D32E9C2CBAD2F600E73873 /* Main.storyboard */,
+				A1D32EAA2CBAD49C00E73873 /* Login */,
 				A1D32E9F2CBAD2F800E73873 /* Assets.xcassets */,
 				A1D32EA12CBAD2F800E73873 /* LaunchScreen.storyboard */,
 				A1D32EA42CBAD2F800E73873 /* Info.plist */,
 			);
 			path = "E-commerce-App";
+			sourceTree = "<group>";
+		};
+		A1D32EAA2CBAD49C00E73873 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32EAB2CBAD4ED00E73873 /* SignInViewController.swift */,
+				A1D32EAD2CBAD67700E73873 /* SignInViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A1D32EAF2CBAD71600E73873 /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32EB02CBAD72B00E73873 /* Withable.swift */,
+				A1D32EB22CBAD74200E73873 /* UIStackView+Ext.swift */,
+				A1D32EB42CBAD74E00E73873 /* UIView+Ext.swift */,
+				A1D32EB62CBAD78C00E73873 /* UIColor+Ext.swift */,
+				A1D32EB82CBAD79E00E73873 /* UIButton+Ext.swift */,
+				A1D32EBA2CBAD7AE00E73873 /* UIFont+Ext.swift */,
+			);
+			path = Helps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +184,6 @@
 			files = (
 				A1D32EA32CBAD2F800E73873 /* LaunchScreen.storyboard in Resources */,
 				A1D32EA02CBAD2F800E73873 /* Assets.xcassets in Resources */,
-				A1D32E9E2CBAD2F600E73873 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +236,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D32E9B2CBAD2F600E73873 /* ViewController.swift in Sources */,
+				A1D32EB52CBAD74E00E73873 /* UIView+Ext.swift in Sources */,
+				A1D32EB32CBAD74200E73873 /* UIStackView+Ext.swift in Sources */,
+				A1D32EBB2CBAD7AE00E73873 /* UIFont+Ext.swift in Sources */,
+				A1D32EAC2CBAD4ED00E73873 /* SignInViewController.swift in Sources */,
 				A1D32E972CBAD2F600E73873 /* AppDelegate.swift in Sources */,
-				A1D32E992CBAD2F600E73873 /* SceneDelegate.swift in Sources */,
+				A1D32EB92CBAD79E00E73873 /* UIButton+Ext.swift in Sources */,
+				A1D32EB72CBAD78C00E73873 /* UIColor+Ext.swift in Sources */,
+				A1D32EAE2CBAD67700E73873 /* SignInViewModel.swift in Sources */,
+				A1D32EB12CBAD72B00E73873 /* Withable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A1D32E9C2CBAD2F600E73873 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1D32E9D2CBAD2F600E73873 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A1D32EA12CBAD2F800E73873 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,11 +390,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26M3H74736;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "E-commerce-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,11 +419,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26M3H74736;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "E-commerce-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
