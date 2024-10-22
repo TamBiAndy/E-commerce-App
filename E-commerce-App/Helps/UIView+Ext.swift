@@ -89,6 +89,7 @@ extension UIView {
         
         self.sendSubviewToBack(gradientView)
     }
+    
 }
 
 final class GradientView: UIView {
@@ -112,6 +113,7 @@ final class GradientView: UIView {
         self.locations = locations
 
         super.init(frame: .zero)
+        print("Setting up gradient background")
         setupBGColor()
     }
     
@@ -121,6 +123,7 @@ final class GradientView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        print("GradientView layoutSubviews - updating frame")
         gradientLayer.frame = self.bounds
        
     }
@@ -131,7 +134,7 @@ final class GradientView: UIView {
         gradientLayer.startPoint = startPoint.point
         gradientLayer.endPoint = endPoint.point
         gradientLayer.locations = locations
-       
+        print("Gradient layer set up with colors: \(colors), startPoint: \(startPoint.point), endPoint: \(endPoint.point), locations: \(locations)")
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }

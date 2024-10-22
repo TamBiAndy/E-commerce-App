@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = SignInViewController()
+        if SessionManager.shared.isUserLogged {
+            window?.rootViewController = TabBarController()
+        } else {
+            let viewModel = SignInViewModel()
+            window?.rootViewController = SignInViewController(viewModel: viewModel)
+        }
         window?.makeKeyAndVisible()
         
         return true

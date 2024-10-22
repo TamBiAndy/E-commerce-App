@@ -10,18 +10,22 @@ import UIKit
 extension UIFont {
     
     static func bold(size: CGFloat) -> UIFont {
-        .init(name: ".SFArmenian-Bold", size: size)!
+        .init(name: "Montserrat-Bold", size: size)!
     }
     
-    static func semiBold(size: CGFloat) -> UIFont {
-        .init(name: ".SFArmenian-SemiBold", size: size)!
+    static func medium(size: CGFloat) -> UIFont {
+        .init(name: "Montserrat-Medium", size: size)!
     }
     
     static func regular(size: CGFloat) -> UIFont {
-        .init(name: ".SFArmenian-Regular", size: size)!
+        .init(name: "Montserrat-Regular", size: size)!
     }
     
-    static func ultralight(size: CGFloat) -> UIFont {
-        .init(name: ".SF-Armenian-Ultralight", size: size)!
+    static func semiBold(size: CGFloat) -> UIFont {
+        .init(name: "Montserrat-SemiBold", size: size)!
+    }
+    
+    static func light(size: CGFloat) -> UIFont {
+        .init(name: "Montserrat-Light", size: size)!
     }
 }

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		35EC6DFE83228EEB099D578C /* Pods_E_commerce_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370E931B89E99DBA283F81E0 /* Pods_E_commerce_App.framework */; };
+		A10F868F2CC64925003D025F /* SpecialOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F868E2CC64925003D025F /* SpecialOfferView.swift */; };
+		A10F86912CC6499D003D025F /* SpecialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F86902CC6499D003D025F /* SpecialViewModel.swift */; };
+		A10F86942CC6C97B003D025F /* TrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F86932CC6C97B003D025F /* TrendingView.swift */; };
+		A10F86962CC6C986003D025F /* TrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F86952CC6C986003D025F /* TrendingViewModel.swift */; };
+		A10F86992CC77FE0003D025F /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F86982CC77FDF003D025F /* BottomView.swift */; };
+		A10F869B2CC77FEC003D025F /* BottomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F869A2CC77FEC003D025F /* BottomViewModel.swift */; };
 		A1D32E972CBAD2F600E73873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32E962CBAD2F600E73873 /* AppDelegate.swift */; };
 		A1D32EA02CBAD2F800E73873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D32E9F2CBAD2F800E73873 /* Assets.xcassets */; };
 		A1D32EA32CBAD2F800E73873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D32EA12CBAD2F800E73873 /* LaunchScreen.storyboard */; };
@@ -19,11 +25,50 @@
 		A1D32EB72CBAD78C00E73873 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EB62CBAD78C00E73873 /* UIColor+Ext.swift */; };
 		A1D32EB92CBAD79E00E73873 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EB82CBAD79E00E73873 /* UIButton+Ext.swift */; };
 		A1D32EBB2CBAD7AE00E73873 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EBA2CBAD7AE00E73873 /* UIFont+Ext.swift */; };
+		A1D32ECF2CBCCA0800E73873 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D32EC32CBCBFC400E73873 /* Montserrat-Bold.ttf */; };
+		A1D32ED02CBCCA0800E73873 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D32ECD2CBCBFC400E73873 /* Montserrat-Light.ttf */; };
+		A1D32ED12CBCCA0800E73873 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D32EBD2CBCBFC300E73873 /* Montserrat-Medium.ttf */; };
+		A1D32ED22CBCCA0800E73873 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D32ECA2CBCBFC400E73873 /* Montserrat-Regular.ttf */; };
+		A1D32ED32CBCCA8C00E73873 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D32EC72CBCBFC400E73873 /* Montserrat-SemiBold.ttf */; };
+		A1D32ED52CBCDF7E00E73873 /* CreatAccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32ED42CBCDF7E00E73873 /* CreatAccViewController.swift */; };
+		A1D32ED72CBCDF8E00E73873 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32ED62CBCDF8E00E73873 /* FindPasswordViewController.swift */; };
+		A1D32ED92CBCE4EF00E73873 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32ED82CBCE4EF00E73873 /* GetStartedViewController.swift */; };
+		A1D32EDB2CBCE51A00E73873 /* API Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EDA2CBCE51A00E73873 /* API Target.swift */; };
+		A1D32EDD2CBD0C9F00E73873 /* FindPwViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EDC2CBD0C9F00E73873 /* FindPwViewModel.swift */; };
+		A1D32EDF2CBD6BA100E73873 /* mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EDE2CBD6BA100E73873 /* mock.swift */; };
+		A1D32EE12CBD6FAE00E73873 /* CreatAccViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EE02CBD6FAE00E73873 /* CreatAccViewModel.swift */; };
+		A1D32EE82CBF835C00E73873 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EE72CBF835C00E73873 /* HomeViewController.swift */; };
+		A1D32EEA2CBF837400E73873 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EE92CBF837400E73873 /* WishlistViewController.swift */; };
+		A1D32EEC2CBF839000E73873 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EEB2CBF839000E73873 /* SearchViewController.swift */; };
+		A1D32EEE2CBF839D00E73873 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EED2CBF839D00E73873 /* SetupViewController.swift */; };
+		A1D32EF42CBF8F5300E73873 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EF32CBF8F5300E73873 /* TabBarController.swift */; };
+		A1D32EF62CBF974700E73873 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EF52CBF974700E73873 /* CartViewController.swift */; };
+		A1D32EFA2CC0D7AE00E73873 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EF92CC0D7AE00E73873 /* HomeViewModel.swift */; };
+		A1D32EFC2CC0D7FE00E73873 /* APITargetHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EFB2CC0D7FE00E73873 /* APITargetHomeVC.swift */; };
+		A1D32EFE2CC0DBB200E73873 /* mockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EFD2CC0DBB200E73873 /* mockApi.swift */; };
+		A1D32F002CC0EA5700E73873 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32EFF2CC0EA5700E73873 /* UIImageView+Ext.swift */; };
+		A1D32F062CC1094C00E73873 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F052CC1094C00E73873 /* SearchResultViewController.swift */; };
+		A1D32F082CC17F3B00E73873 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F072CC17F3B00E73873 /* NavigationBar.swift */; };
+		A1D32F0A2CC231BF00E73873 /* UISearchBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F092CC231BF00E73873 /* UISearchBar+Ext.swift */; };
+		A1D32F0C2CC23C4F00E73873 /* AllFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F0B2CC23C4F00E73873 /* AllFeatureView.swift */; };
+		A1D32F0E2CC24A2500E73873 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F0D2CC24A2500E73873 /* ItemCollectionViewCell.swift */; };
+		A1D32F112CC2BF4D00E73873 /* SaleOffCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F102CC2BF4D00E73873 /* SaleOffCollectionViewCell.swift */; };
+		A1D32F152CC2C14700E73873 /* AllFeatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F142CC2C14700E73873 /* AllFeatureViewModel.swift */; };
+		A1D32F182CC4323300E73873 /* DealOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F172CC4323300E73873 /* DealOfTheDayView.swift */; };
+		A1D32F1A2CC4328900E73873 /* DealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F192CC4328900E73873 /* DealViewModel.swift */; };
+		A1D32F1C2CC565FA00E73873 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F1B2CC565FA00E73873 /* ProductCell.swift */; };
+		A1D32F1E2CC56BA200E73873 /* String Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D32F1D2CC56BA200E73873 /* String Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		370E931B89E99DBA283F81E0 /* Pods_E_commerce_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_commerce_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A4EBD5A057B2A0E0D33694 /* Pods-E-commerce-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-App.release.xcconfig"; path = "Target Support Files/Pods-E-commerce-App/Pods-E-commerce-App.release.xcconfig"; sourceTree = "<group>"; };
+		A10F868E2CC64925003D025F /* SpecialOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialOfferView.swift; sourceTree = "<group>"; };
+		A10F86902CC6499D003D025F /* SpecialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewModel.swift; sourceTree = "<group>"; };
+		A10F86932CC6C97B003D025F /* TrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingView.swift; sourceTree = "<group>"; };
+		A10F86952CC6C986003D025F /* TrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewModel.swift; sourceTree = "<group>"; };
+		A10F86982CC77FDF003D025F /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		A10F869A2CC77FEC003D025F /* BottomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewModel.swift; sourceTree = "<group>"; };
 		A1D32E932CBAD2F600E73873 /* E-commerce-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-commerce-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D32E962CBAD2F600E73873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1D32E9F2CBAD2F800E73873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +82,52 @@
 		A1D32EB62CBAD78C00E73873 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		A1D32EB82CBAD79E00E73873 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		A1D32EBA2CBAD7AE00E73873 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		A1D32EBD2CBCBFC300E73873 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		A1D32EBE2CBCBFC300E73873 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A1D32EBF2CBCBFC300E73873 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		A1D32EC02CBCBFC300E73873 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A1D32EC12CBCBFC400E73873 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		A1D32EC22CBCBFC400E73873 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		A1D32EC32CBCBFC400E73873 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		A1D32EC42CBCBFC400E73873 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A1D32EC52CBCBFC400E73873 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A1D32EC62CBCBFC400E73873 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A1D32EC72CBCBFC400E73873 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		A1D32EC82CBCBFC400E73873 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		A1D32EC92CBCBFC400E73873 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A1D32ECA2CBCBFC400E73873 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		A1D32ECB2CBCBFC400E73873 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A1D32ECC2CBCBFC400E73873 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A1D32ECD2CBCBFC400E73873 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		A1D32ECE2CBCBFC400E73873 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		A1D32ED42CBCDF7E00E73873 /* CreatAccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatAccViewController.swift; sourceTree = "<group>"; };
+		A1D32ED62CBCDF8E00E73873 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
+		A1D32ED82CBCE4EF00E73873 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		A1D32EDA2CBCE51A00E73873 /* API Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Target.swift"; sourceTree = "<group>"; };
+		A1D32EDC2CBD0C9F00E73873 /* FindPwViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwViewModel.swift; sourceTree = "<group>"; };
+		A1D32EDE2CBD6BA100E73873 /* mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock.swift; sourceTree = "<group>"; };
+		A1D32EE02CBD6FAE00E73873 /* CreatAccViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatAccViewModel.swift; sourceTree = "<group>"; };
+		A1D32EE72CBF835C00E73873 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1D32EE92CBF837400E73873 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		A1D32EEB2CBF839000E73873 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A1D32EED2CBF839D00E73873 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		A1D32EF32CBF8F5300E73873 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A1D32EF52CBF974700E73873 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		A1D32EF92CC0D7AE00E73873 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A1D32EFB2CC0D7FE00E73873 /* APITargetHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITargetHomeVC.swift; sourceTree = "<group>"; };
+		A1D32EFD2CC0DBB200E73873 /* mockApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockApi.swift; sourceTree = "<group>"; };
+		A1D32EFF2CC0EA5700E73873 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		A1D32F052CC1094C00E73873 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		A1D32F072CC17F3B00E73873 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		A1D32F092CC231BF00E73873 /* UISearchBar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Ext.swift"; sourceTree = "<group>"; };
+		A1D32F0B2CC23C4F00E73873 /* AllFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFeatureView.swift; sourceTree = "<group>"; };
+		A1D32F0D2CC24A2500E73873 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1D32F102CC2BF4D00E73873 /* SaleOffCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleOffCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1D32F142CC2C14700E73873 /* AllFeatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFeatureViewModel.swift; sourceTree = "<group>"; };
+		A1D32F172CC4323300E73873 /* DealOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealOfTheDayView.swift; sourceTree = "<group>"; };
+		A1D32F192CC4328900E73873 /* DealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealViewModel.swift; sourceTree = "<group>"; };
+		A1D32F1B2CC565FA00E73873 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		A1D32F1D2CC56BA200E73873 /* String Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String Ext.swift"; sourceTree = "<group>"; };
 		A9B881BFF69DF9B4AD509198 /* Pods-E-commerce-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-App.debug.xcconfig"; path = "Target Support Files/Pods-E-commerce-App/Pods-E-commerce-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,11 +160,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A10F868D2CC648FC003D025F /* Speacial Offer */ = {
+			isa = PBXGroup;
+			children = (
+				A10F868E2CC64925003D025F /* SpecialOfferView.swift */,
+				A10F86902CC6499D003D025F /* SpecialViewModel.swift */,
+			);
+			path = "Speacial Offer";
+			sourceTree = "<group>";
+		};
+		A10F86922CC6C94E003D025F /* Trending Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10F86932CC6C97B003D025F /* TrendingView.swift */,
+				A10F86952CC6C986003D025F /* TrendingViewModel.swift */,
+			);
+			path = "Trending Products";
+			sourceTree = "<group>";
+		};
+		A10F86972CC77FC6003D025F /* BottomView */ = {
+			isa = PBXGroup;
+			children = (
+				A10F86982CC77FDF003D025F /* BottomView.swift */,
+				A10F869A2CC77FEC003D025F /* BottomViewModel.swift */,
+			);
+			path = BottomView;
+			sourceTree = "<group>";
+		};
 		A1D32E8A2CBAD2F600E73873 = {
 			isa = PBXGroup;
 			children = (
 				A1D32E952CBAD2F600E73873 /* E-commerce-App */,
 				A1D32EAF2CBAD71600E73873 /* Helps */,
+				A1D32EBC2CBCBF7A00E73873 /* Font */,
 				A1D32E942CBAD2F600E73873 /* Products */,
 				7C5A5E09DD6DBFFCCD87C7E5 /* Pods */,
 				042AFF4DF9EFCEA2D5F41F17 /* Frameworks */,
@@ -92,7 +211,10 @@
 			isa = PBXGroup;
 			children = (
 				A1D32E962CBAD2F600E73873 /* AppDelegate.swift */,
+				A1D32EE22CBE13C200E73873 /* TabBarController */,
 				A1D32EAA2CBAD49C00E73873 /* Login */,
+				A1D32EE52CBF823F00E73873 /* Home */,
+				A1D32EE62CBF825900E73873 /* Wishlist */,
 				A1D32E9F2CBAD2F800E73873 /* Assets.xcassets */,
 				A1D32EA12CBAD2F800E73873 /* LaunchScreen.storyboard */,
 				A1D32EA42CBAD2F800E73873 /* Info.plist */,
@@ -105,6 +227,13 @@
 			children = (
 				A1D32EAB2CBAD4ED00E73873 /* SignInViewController.swift */,
 				A1D32EAD2CBAD67700E73873 /* SignInViewModel.swift */,
+				A1D32ED42CBCDF7E00E73873 /* CreatAccViewController.swift */,
+				A1D32EE02CBD6FAE00E73873 /* CreatAccViewModel.swift */,
+				A1D32ED62CBCDF8E00E73873 /* FindPasswordViewController.swift */,
+				A1D32EDC2CBD0C9F00E73873 /* FindPwViewModel.swift */,
+				A1D32ED82CBCE4EF00E73873 /* GetStartedViewController.swift */,
+				A1D32EDA2CBCE51A00E73873 /* API Target.swift */,
+				A1D32EDE2CBD6BA100E73873 /* mock.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -118,8 +247,95 @@
 				A1D32EB62CBAD78C00E73873 /* UIColor+Ext.swift */,
 				A1D32EB82CBAD79E00E73873 /* UIButton+Ext.swift */,
 				A1D32EBA2CBAD7AE00E73873 /* UIFont+Ext.swift */,
+				A1D32EFF2CC0EA5700E73873 /* UIImageView+Ext.swift */,
+				A1D32F072CC17F3B00E73873 /* NavigationBar.swift */,
+				A1D32F092CC231BF00E73873 /* UISearchBar+Ext.swift */,
+				A1D32F1D2CC56BA200E73873 /* String Ext.swift */,
 			);
 			path = Helps;
+			sourceTree = "<group>";
+		};
+		A1D32EBC2CBCBF7A00E73873 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32EC82CBCBFC400E73873 /* Montserrat-Black.ttf */,
+				A1D32ECB2CBCBFC400E73873 /* Montserrat-BlackItalic.ttf */,
+				A1D32EC32CBCBFC400E73873 /* Montserrat-Bold.ttf */,
+				A1D32ECC2CBCBFC400E73873 /* Montserrat-BoldItalic.ttf */,
+				A1D32EC62CBCBFC400E73873 /* Montserrat-ExtraBold.ttf */,
+				A1D32EC42CBCBFC400E73873 /* Montserrat-ExtraBoldItalic.ttf */,
+				A1D32EC92CBCBFC400E73873 /* Montserrat-ExtraLight.ttf */,
+				A1D32EC12CBCBFC400E73873 /* Montserrat-ExtraLightItalic.ttf */,
+				A1D32EBF2CBCBFC300E73873 /* Montserrat-Italic.ttf */,
+				A1D32ECD2CBCBFC400E73873 /* Montserrat-Light.ttf */,
+				A1D32EC22CBCBFC400E73873 /* Montserrat-LightItalic.ttf */,
+				A1D32EBD2CBCBFC300E73873 /* Montserrat-Medium.ttf */,
+				A1D32EC52CBCBFC400E73873 /* Montserrat-MediumItalic.ttf */,
+				A1D32ECA2CBCBFC400E73873 /* Montserrat-Regular.ttf */,
+				A1D32EC72CBCBFC400E73873 /* Montserrat-SemiBold.ttf */,
+				A1D32EBE2CBCBFC300E73873 /* Montserrat-SemiBoldItalic.ttf */,
+				A1D32ECE2CBCBFC400E73873 /* Montserrat-Thin.ttf */,
+				A1D32EC02CBCBFC300E73873 /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A1D32EE22CBE13C200E73873 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32EF32CBF8F5300E73873 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		A1D32EE52CBF823F00E73873 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32EE72CBF835C00E73873 /* HomeViewController.swift */,
+				A1D32EF92CC0D7AE00E73873 /* HomeViewModel.swift */,
+				A1D32F052CC1094C00E73873 /* SearchResultViewController.swift */,
+				A1D32F0F2CC2BCC100E73873 /* AllFeatureView */,
+				A1D32F162CC431FC00E73873 /* DealOfTheDay */,
+				A10F868D2CC648FC003D025F /* Speacial Offer */,
+				A10F86922CC6C94E003D025F /* Trending Products */,
+				A10F86972CC77FC6003D025F /* BottomView */,
+				A1D32EFB2CC0D7FE00E73873 /* APITargetHomeVC.swift */,
+				A1D32EFD2CC0DBB200E73873 /* mockApi.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1D32EE62CBF825900E73873 /* Wishlist */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32EE92CBF837400E73873 /* WishlistViewController.swift */,
+				A1D32EEB2CBF839000E73873 /* SearchViewController.swift */,
+				A1D32EED2CBF839D00E73873 /* SetupViewController.swift */,
+				A1D32EF52CBF974700E73873 /* CartViewController.swift */,
+			);
+			path = Wishlist;
+			sourceTree = "<group>";
+		};
+		A1D32F0F2CC2BCC100E73873 /* AllFeatureView */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32F0B2CC23C4F00E73873 /* AllFeatureView.swift */,
+				A1D32F142CC2C14700E73873 /* AllFeatureViewModel.swift */,
+				A1D32F0D2CC24A2500E73873 /* ItemCollectionViewCell.swift */,
+				A1D32F102CC2BF4D00E73873 /* SaleOffCollectionViewCell.swift */,
+			);
+			path = AllFeatureView;
+			sourceTree = "<group>";
+		};
+		A1D32F162CC431FC00E73873 /* DealOfTheDay */ = {
+			isa = PBXGroup;
+			children = (
+				A1D32F172CC4323300E73873 /* DealOfTheDayView.swift */,
+				A1D32F192CC4328900E73873 /* DealViewModel.swift */,
+				A1D32F1B2CC565FA00E73873 /* ProductCell.swift */,
+			);
+			name = DealOfTheDay;
+			path = "DealÒTheDay";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +398,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D32ED32CBCCA8C00E73873 /* Montserrat-SemiBold.ttf in Resources */,
+				A1D32ECF2CBCCA0800E73873 /* Montserrat-Bold.ttf in Resources */,
+				A1D32ED02CBCCA0800E73873 /* Montserrat-Light.ttf in Resources */,
+				A1D32ED12CBCCA0800E73873 /* Montserrat-Medium.ttf in Resources */,
+				A1D32ED22CBCCA0800E73873 /* Montserrat-Regular.ttf in Resources */,
 				A1D32EA32CBAD2F800E73873 /* LaunchScreen.storyboard in Resources */,
 				A1D32EA02CBAD2F800E73873 /* Assets.xcassets in Resources */,
 			);
@@ -238,12 +459,46 @@
 			files = (
 				A1D32EB52CBAD74E00E73873 /* UIView+Ext.swift in Sources */,
 				A1D32EB32CBAD74200E73873 /* UIStackView+Ext.swift in Sources */,
+				A1D32EFE2CC0DBB200E73873 /* mockApi.swift in Sources */,
+				A10F86942CC6C97B003D025F /* TrendingView.swift in Sources */,
 				A1D32EBB2CBAD7AE00E73873 /* UIFont+Ext.swift in Sources */,
+				A10F86962CC6C986003D025F /* TrendingViewModel.swift in Sources */,
+				A1D32ED92CBCE4EF00E73873 /* GetStartedViewController.swift in Sources */,
+				A1D32EE12CBD6FAE00E73873 /* CreatAccViewModel.swift in Sources */,
+				A1D32EFA2CC0D7AE00E73873 /* HomeViewModel.swift in Sources */,
+				A1D32EE82CBF835C00E73873 /* HomeViewController.swift in Sources */,
+				A1D32F002CC0EA5700E73873 /* UIImageView+Ext.swift in Sources */,
+				A1D32F1E2CC56BA200E73873 /* String Ext.swift in Sources */,
 				A1D32EAC2CBAD4ED00E73873 /* SignInViewController.swift in Sources */,
+				A1D32F062CC1094C00E73873 /* SearchResultViewController.swift in Sources */,
+				A1D32F082CC17F3B00E73873 /* NavigationBar.swift in Sources */,
+				A1D32EDB2CBCE51A00E73873 /* API Target.swift in Sources */,
+				A10F86912CC6499D003D025F /* SpecialViewModel.swift in Sources */,
 				A1D32E972CBAD2F600E73873 /* AppDelegate.swift in Sources */,
+				A1D32EDF2CBD6BA100E73873 /* mock.swift in Sources */,
+				A1D32EFC2CC0D7FE00E73873 /* APITargetHomeVC.swift in Sources */,
+				A10F868F2CC64925003D025F /* SpecialOfferView.swift in Sources */,
+				A1D32F0A2CC231BF00E73873 /* UISearchBar+Ext.swift in Sources */,
+				A1D32EEC2CBF839000E73873 /* SearchViewController.swift in Sources */,
 				A1D32EB92CBAD79E00E73873 /* UIButton+Ext.swift in Sources */,
+				A1D32EEE2CBF839D00E73873 /* SetupViewController.swift in Sources */,
 				A1D32EB72CBAD78C00E73873 /* UIColor+Ext.swift in Sources */,
 				A1D32EAE2CBAD67700E73873 /* SignInViewModel.swift in Sources */,
+				A1D32ED72CBCDF8E00E73873 /* FindPasswordViewController.swift in Sources */,
+				A1D32F0C2CC23C4F00E73873 /* AllFeatureView.swift in Sources */,
+				A1D32F112CC2BF4D00E73873 /* SaleOffCollectionViewCell.swift in Sources */,
+				A1D32ED52CBCDF7E00E73873 /* CreatAccViewController.swift in Sources */,
+				A1D32F182CC4323300E73873 /* DealOfTheDayView.swift in Sources */,
+				A1D32F1A2CC4328900E73873 /* DealViewModel.swift in Sources */,
+				A1D32EDD2CBD0C9F00E73873 /* FindPwViewModel.swift in Sources */,
+				A1D32F0E2CC24A2500E73873 /* ItemCollectionViewCell.swift in Sources */,
+				A10F869B2CC77FEC003D025F /* BottomViewModel.swift in Sources */,
+				A1D32EF62CBF974700E73873 /* CartViewController.swift in Sources */,
+				A1D32EF42CBF8F5300E73873 /* TabBarController.swift in Sources */,
+				A1D32F152CC2C14700E73873 /* AllFeatureViewModel.swift in Sources */,
+				A1D32F1C2CC565FA00E73873 /* ProductCell.swift in Sources */,
+				A10F86992CC77FE0003D025F /* BottomView.swift in Sources */,
+				A1D32EEA2CBF837400E73873 /* WishlistViewController.swift in Sources */,
 				A1D32EB12CBAD72B00E73873 /* Withable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
