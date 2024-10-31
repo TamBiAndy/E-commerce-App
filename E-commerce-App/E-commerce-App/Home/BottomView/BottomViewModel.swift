@@ -14,7 +14,7 @@ struct SponserdResponse: Codable {
     let detail: String?
   }
 
-  let id: Int?
+  let id: String?
   let sponserd: Sponserd?
 }
 
@@ -24,7 +24,7 @@ struct NewArrivalResponse: Codable {
     let description: String?
   }
 
-  let id: Int?
+  let id: String?
   let newArrival: NewArrival?
 }
 

@@ -37,7 +37,7 @@ class HomeViewController: UIViewController, UISearchControllerDelegate {
         setupScrollView()
         setupContentView()
         setupHeaderNavi()
-//        fetchingData()
+        fetchingData()
         setupSearchBar()
     }
     
@@ -165,10 +165,24 @@ class HomeViewController: UIViewController, UISearchControllerDelegate {
             make.horizontalEdges.equalToSuperview()
             make.bottom.equalToSuperview()
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(clickToDetailPage), name: .didSelectItem, object: nil)
     }
     
     @objc func goToMenu() {
         
+    }
+    
+    @objc func clickToDetailPage(notification: NSNotification) {
+        guard let productId = notification.object as? String else { return }
+        let viewModel = DetailViewModel(productId: productId)
+        let customButtonView = CustomButtonView()
+        let similarViewMd = SimilarViewModel()
+        let similarView = SimilarView(viewModel: similarViewMd)
+        let detailVC = DetailViewController(viewModel: viewModel, customButton: customButtonView, similarView: similarView)
+        navigationController?.pushViewController(detailVC, animated: true)
+        
+        NotificationCenter.default.post(name: .changeColorButtonCart, object: nil)
     }
 }
 
@@ -182,4 +196,8 @@ extension HomeViewController: UISearchBarDelegate {
         let searchResultVC = SearchResultViewController()
         navigationController?.pushViewController(searchResultVC, animated: false)
     }
+}
+
+extension NSNotification.Name {
+    static let changeColorButtonCart = NSNotification.Name("changeColorButtonCart")
 }

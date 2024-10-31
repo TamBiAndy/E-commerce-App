@@ -89,6 +89,7 @@ class AllFeatureView: UIView {
         viewModel.getItemCategory { error in
             if let error {
                 // TODO: handler error
+                print(error)
             } else {
                 self.categoryCollectionView.reloadData()
             }
@@ -174,7 +175,7 @@ class AllFeatureView: UIView {
 }
 
 extension AllFeatureView: UICollectionViewDelegate {
-    
+   
 }
 
 extension AllFeatureView: UICollectionViewDataSource {

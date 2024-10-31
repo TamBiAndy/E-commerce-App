@@ -18,6 +18,9 @@ enum APITargetHomeVC: TargetType {
     case getTrendingProduct
     case getSponserdInfor
     case getNewArrival
+    case getWishList
+    case getProductDetail(id: String?)
+    case getSimilarProduct
     
     var baseURL: URL {
         switch self {
@@ -35,6 +38,12 @@ enum APITargetHomeVC: TargetType {
             return URL(string: "https://83a4a5cf-6fd3-43bd-a048-b22dad439ff6.mock.pstmn.io")!
         case .getSponserdInfor, .getNewArrival:
             return URL(string: "https://43f3f278-ea11-47e7-8375-a288d4fad135.mock.pstmn.io")!
+        case .getWishList:
+            return URL(string: "https://074283cd-b2fd-4697-a5ea-0af876973c91.mock.pstmn.io")!
+        case .getProductDetail(let id):
+            return URL(string: "https://c7cec513-392f-43c3-b012-c3b0ffcbb048.mock.pstmn.io")!
+        case .getSimilarProduct:
+            return URL(string: "https://12cefd4b-355b-41c5-8e48-4ab5776a1526.mock.pstmn.io")!
         }
     }
     
@@ -56,14 +65,20 @@ enum APITargetHomeVC: TargetType {
             return "/sponserd"
         case .getNewArrival:
             return "/newArrival"
+        case .getWishList:
+            return "/wishList"
+        case .getProductDetail(let id):
+            return "/product/detail"
+        case .getSimilarProduct:
+            return "/similarProduct"
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .getUserInfor:
-            return .post
-        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor:
+            return .get
+        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getProductDetail, .getSimilarProduct:
             return .get
         }
     }
@@ -71,9 +86,11 @@ enum APITargetHomeVC: TargetType {
     var task: Moya.Task {
         switch self {
         case .getUserInfor(let token):
-            return .requestParameters(parameters: ["token": token], encoding: JSONEncoding.default)
-        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor:
+            return .requestParameters(parameters: ["token": token], encoding: URLEncoding.default)
+        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getSimilarProduct:
             return .requestParameters(parameters: [:], encoding: URLEncoding.default)
+        case .getProductDetail(let id):
+            return .requestParameters(parameters: ["id": id ?? ""], encoding: URLEncoding.default)
         }
     }
     

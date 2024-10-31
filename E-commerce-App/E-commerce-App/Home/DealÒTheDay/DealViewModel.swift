@@ -10,6 +10,7 @@ import Moya
 
 struct DealOffTheDay: Codable {
     struct DealOff: Codable {
+        let id: String?
         let image: String?
         let productName: String?
         let productDetail: String?
@@ -19,7 +20,7 @@ struct DealOffTheDay: Codable {
         let rating: Int?
     }
     
-    let id: Int?
+    let id: String?
     let timeRemain: String?
     let dealOff: [DealOff]?
     
@@ -48,6 +49,7 @@ class DealViewModel {
                     completion(nil)
                 } catch {
                     completion(error)
+                    print(error)
                 }
             case .failure(let error):
                 completion(error)
