@@ -30,4 +30,11 @@ extension String {
         }
         return nil
     }
+    
+    func creatReadMoreAttributedText(displayText: String?, toggleText: String?, colorAtt: UIColor?, font: UIFont?) -> NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: displayText ?? "")
+        let toggleAttribute = NSAttributedString(string: toggleText ?? "", attributes: [.foregroundColor: colorAtt ?? .black, .font: font ?? .systemFont(ofSize: 12)])
+        attributedString.append(toggleAttribute)
+        return attributedString
+    }
 }

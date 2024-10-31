@@ -138,3 +138,50 @@ final class GradientView: UIView {
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
+extension UIView {
+    private func addInnerShadow(
+        color: UIColor = .black,
+        alpha: Float = 0.5,
+        blur: CGFloat = 4,
+        x: CGFloat = 0,
+        y: CGFloat = 0,
+        spread: CGFloat = 0,
+        cornerRadius: CGFloat = 10) {
+            // Xóa tất cả các layer shadow cũ
+            layer.sublayers?.removeAll(where: { $0.name == "innerShadow" })
+            
+            // Tạo layer cho inner shadow
+            let innerShadowLayer = CALayer()
+            innerShadowLayer.name = "innerShadow"
+            innerShadowLayer.frame = bounds
+            innerShadowLayer.cornerRadius = cornerRadius
+            innerShadowLayer.backgroundColor = UIColor.clear.cgColor
+            
+            // Tạo path cho shadow
+            let dx = -spread
+            let shadowPath = UIBezierPath(ovalIn: bounds.insetBy(dx: dx, dy: dx)).cgPath
+            let maskLayer = CAShapeLayer()
+            if spread == 0 {
+                maskLayer.path = nil
+            } else {
+                maskLayer.path = shadowPath
+            }
+            
+            // Tạo inner shadow
+            let shadowLayer = CALayer()
+            shadowLayer.frame = bounds
+            shadowLayer.backgroundColor = color.withAlphaComponent(CGFloat(alpha)).cgColor
+            shadowLayer.mask = maskLayer
+            
+            // Thêm shadow layer vào view
+            layer.addSublayer(innerShadowLayer)
+            layer.addSublayer(shadowLayer)
+            
+            // Thiết lập shadow
+            shadowLayer.shadowColor = color.cgColor
+            shadowLayer.shadowOpacity = alpha
+            shadowLayer.shadowOffset = CGSize(width: x, height: y)
+            shadowLayer.shadowRadius = blur
+            shadowLayer.shadowPath = maskLayer.shadowPath
+        }
+}
