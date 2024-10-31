@@ -53,8 +53,8 @@ class TabBarController: UITabBarController {
         let homeNavi = UINavigationController(navigationBarClass: CustomNavigationBar.self, toolbarClass: nil)
         homeNavi.viewControllers = [firstVC]
 //        let homeNavi = UINavigationController(rootViewController: firstVC)
-        
-        let secondVC = WishlistViewController()
+        let wishListviewModel = WishListViewModel()
+        let secondVC = WishlistViewController(viewModel: wishListviewModel)
         secondVC.tabBarItem = UITabBarItem(title: "Wishlist", image: UIImage(named: "heart 2"), tag: 1)
         let wisflistNavi = UINavigationController(rootViewController: secondVC)
         
@@ -94,10 +94,23 @@ class TabBarController: UITabBarController {
             let selectedAttributes = [NSAttributedString.Key.foregroundColor: UIColor(hexString: "EB3030")]
             UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, for: .selected)
             tabBar.applySketchShadow(color: .black, alpha: 0.1, x: 0, y: -1, blur: 1, spread: 0)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(changeColorBtnCart), name: .changeColorButtonCart, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(resetColorBtnCart), name: .resetBackgroundBtnCart, object: nil)
     }
     
     @objc func cartButtonTapped(sender: UIButton) {
         self.selectedIndex = 2
+    }
+    
+    @objc func changeColorBtnCart() {
+        btnCart.backgroundColor = UIColor(hexString: "EB3030")
+        btnCart.setImage(UIImage(named: "shopping-cart 2"), for: .normal)
+    }
+    
+    @objc func resetColorBtnCart() {
+        btnCart.backgroundColor = .white
+        btnCart.setImage(UIImage(named: "shopping-cart 1"), for: .normal)
     }
 
 }

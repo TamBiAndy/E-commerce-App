@@ -14,25 +14,26 @@ struct ItemCategory: Codable {
     let title: String?
   }
 
-  let id: Int?
+  let id: String?
   let categories: [Category]?
 }
 
 struct SaleOffInfor: Codable {
-  struct SaleOff: Codable {
-    let image: String?
-    let title: String?
-    let productName: String?
-    let color: String?
-  }
-
-  let id: Int?
-  let saleOff: [SaleOff]?
-
-  private enum CodingKeys: String, CodingKey {
-    case id
-    case saleOff = "sale_off"
-  }
+    struct SaleOff: Codable {
+        let id: String?
+        let image: String?
+        let title: String?
+        let productName: String?
+        let color: String?
+    }
+    
+    let id: String?
+    let saleOff: [SaleOff]?
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case saleOff = "sale_off"
+    }
 }
 
 class AllFeatureViewModel {

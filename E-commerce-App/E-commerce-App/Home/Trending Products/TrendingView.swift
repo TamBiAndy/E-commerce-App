@@ -143,6 +143,10 @@ class TrendingView: UIView {
 }
 
 extension TrendingView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedItem = viewModel.trendingResponse[indexPath.row]
+        NotificationCenter.default.post(name: .didSelectItem, object: selectedItem.id)
+    }
    
 }
 
