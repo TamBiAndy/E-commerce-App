@@ -9,17 +9,18 @@ import UIKit
 import Moya
 
 struct TrendingResponse: Codable {
-  struct Trending: Codable {
-    let image: String?
-    let description: String?
-    let currentPrice: Int?
-    let originPrice: Int?
-    let percentOff: Int?
-  }
-
-  let id: Int?
-  let lastDate: String?
-  let trending: [Trending]?
+    struct Trending: Codable {
+        let id: String?
+        let image: String?
+        let description: String?
+        let currentPrice: Int?
+        let originPrice: Int?
+        let percentOff: Int?
+    }
+    
+    let id: String?
+    let lastDate: String?
+    let trending: [Trending]?
 }
 class TrendingViewModel {
     let provider = MoyaProvider<APITargetHomeVC>()

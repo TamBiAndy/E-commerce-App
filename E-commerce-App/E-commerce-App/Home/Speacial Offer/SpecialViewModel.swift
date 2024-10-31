@@ -15,7 +15,7 @@ struct SpecialOffer: Codable {
     let productDetail: String?
   }
 
-  let id: Int?
+  let id: String?
   let offer: Offer?
 }
 

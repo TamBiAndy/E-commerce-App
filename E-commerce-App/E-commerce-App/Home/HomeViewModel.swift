@@ -9,7 +9,7 @@ import UIKit
 import Moya
 
 struct UserInfor: Codable {
-  let id: Int?
+  let id: String?
   let username: String?
   let email: String?
   let avatar: String?

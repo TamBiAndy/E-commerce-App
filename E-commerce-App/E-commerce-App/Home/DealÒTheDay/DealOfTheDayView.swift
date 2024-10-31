@@ -145,7 +145,11 @@ class DealOfTheDayView: UIView {
 }
 
 extension DealOfTheDayView: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let selectItem = viewModel.dealOff[indexPath.row]
+        NotificationCenter.default.post(name: .didSelectItem, object: selectItem.id)
+    }
 }
 extension DealOfTheDayView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -159,7 +163,9 @@ extension DealOfTheDayView: UICollectionViewDataSource {
         cell.bind(viewState: viewState)
         return cell
     }
-    
-    
+}
+
+extension NSNotification.Name {
+    static let didSelectItem = NSNotification.Name("didSelectItem")
 }
 

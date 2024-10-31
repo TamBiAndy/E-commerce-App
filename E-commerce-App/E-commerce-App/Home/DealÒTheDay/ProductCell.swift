@@ -88,7 +88,7 @@ class ProductCell: UICollectionViewCell {
         contentView.addSubview(contentVstack)
         contentVstack.backgroundColor = .white
         contentVstack.layer.cornerRadius = 6
-//        contentVstack.applySketchShadow(color: .black, alpha: 0.25, x: 0, y: 4, blur: 4, spread: 0)
+
         contentVstack.addArrangedSubview(productImgView)
         contentVstack.addArrangedView(lblTitle, spacingAbove: 8)
         contentVstack.addArrangedView(lblDescription, spacingAbove: 4)
@@ -115,8 +115,6 @@ class ProductCell: UICollectionViewCell {
         productImgView.kf.setImage(with: URL(string: imageUrl ?? ""))
         lblDescription.text = viewState.description
         lblCurrentPrice.text = "€\(viewState.currentPrice ?? 0)"
-        lblOriginPrice.text =  "€\(viewState.originPrice ?? 0)"
-        lblPercent.text = "\(viewState.percentOff ?? 0)% Off"
         lblDescription.font = viewState.descripFont
         
         if let title = viewState.title {
@@ -132,6 +130,19 @@ class ProductCell: UICollectionViewCell {
         } else {
             cosmosView.isHidden = true
         }
+        
+        if let originPrice = viewState.originPrice {
+            lblOriginPrice.isHidden = false
+            lblOriginPrice.text =  "€\(viewState.originPrice ?? 0)"
+        } else {
+            lblOriginPrice.isHidden = true
+        }
        
+        if let percent = viewState.percentOff {
+            lblPercent.isHidden = false
+            lblPercent.text = "\(viewState.percentOff ?? 0)% Off"
+        } else {
+            lblPercent.isHidden = true
+        }
     }
 }
