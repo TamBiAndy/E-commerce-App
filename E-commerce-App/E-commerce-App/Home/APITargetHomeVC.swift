@@ -21,6 +21,8 @@ enum APITargetHomeVC: TargetType {
     case getWishList
     case getProductDetail(id: String?)
     case getSimilarProduct
+    case getAddress
+    case getProductInCart
     
     var baseURL: URL {
         switch self {
@@ -44,6 +46,8 @@ enum APITargetHomeVC: TargetType {
             return URL(string: "https://c7cec513-392f-43c3-b012-c3b0ffcbb048.mock.pstmn.io")!
         case .getSimilarProduct:
             return URL(string: "https://12cefd4b-355b-41c5-8e48-4ab5776a1526.mock.pstmn.io")!
+        case .getAddress, .getProductInCart:
+            return URL(string: "https://f10202b9-e3ac-465e-aa9f-6c503c7ce72a.mock.pstmn.io")!
         }
     }
     
@@ -71,6 +75,10 @@ enum APITargetHomeVC: TargetType {
             return "/product/detail"
         case .getSimilarProduct:
             return "/similarProduct"
+        case .getAddress:
+            return "/cart/Address"
+        case .getProductInCart:
+            return "/cart/shoppingList"
         }
     }
     
@@ -78,7 +86,7 @@ enum APITargetHomeVC: TargetType {
         switch self {
         case .getUserInfor:
             return .get
-        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getProductDetail, .getSimilarProduct:
+        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getProductDetail, .getSimilarProduct, .getAddress, .getProductInCart:
             return .get
         }
     }
@@ -87,7 +95,7 @@ enum APITargetHomeVC: TargetType {
         switch self {
         case .getUserInfor(let token):
             return .requestParameters(parameters: ["token": token], encoding: URLEncoding.default)
-        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getSimilarProduct:
+        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getSimilarProduct, .getAddress, .getProductInCart:
             return .requestParameters(parameters: [:], encoding: URLEncoding.default)
         case .getProductDetail(let id):
             return .requestParameters(parameters: ["id": id ?? ""], encoding: URLEncoding.default)

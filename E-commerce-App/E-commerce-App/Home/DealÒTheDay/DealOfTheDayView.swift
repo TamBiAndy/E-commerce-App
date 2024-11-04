@@ -69,6 +69,7 @@ class DealOfTheDayView: UIView {
     
     //MARK: - Variables
     var viewModel: DealViewModel
+    var didSelectItem: ()
     
     //MARK: Initializes
     init(viewModel: DealViewModel) {

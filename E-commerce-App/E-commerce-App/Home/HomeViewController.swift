@@ -114,6 +114,8 @@ class HomeViewController: UIViewController, UISearchControllerDelegate {
             make.top.leading.equalToSuperview().offset(4)
             make.trailing.bottom.equalToSuperview().inset(4)
         }
+        
+        userImgView.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(gotoSetupProfile)))
     }
     
     private func setupSearchBar() {
@@ -183,6 +185,12 @@ class HomeViewController: UIViewController, UISearchControllerDelegate {
         navigationController?.pushViewController(detailVC, animated: true)
         
         NotificationCenter.default.post(name: .changeColorButtonCart, object: nil)
+    }
+    
+    @objc func gotoSetupProfile() {
+        let viewModel = SetupViewModel()
+        let nextVC = SetupViewController(viewModel: viewModel)
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 

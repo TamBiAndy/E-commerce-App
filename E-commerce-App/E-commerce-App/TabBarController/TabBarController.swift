@@ -58,14 +58,17 @@ class TabBarController: UITabBarController {
         secondVC.tabBarItem = UITabBarItem(title: "Wishlist", image: UIImage(named: "heart 2"), tag: 1)
         let wisflistNavi = UINavigationController(rootViewController: secondVC)
         
-        let thirdVC = CartViewController()
+        let cartViewModel = CartViewModel()
+        let thirdVC = CartViewController(viewModel: cartViewModel)
+        thirdVC.tabBarItem = UITabBarItem(title: "", image: nil, tag: 2)
         let cartNavi = UINavigationController(rootViewController: thirdVC)
         
         let fourthVC = SearchViewController()
         fourthVC.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: "search 1"), tag: 3)
         let searchNavi = UINavigationController(rootViewController: fourthVC)
         
-        let fifthVC = SetupViewController()
+        let setupViewModel = SetupViewModel()
+        let fifthVC = SetupViewController(viewModel: setupViewModel)
         fifthVC.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(named: "settings"), tag: 4)
         let setupNavi = UINavigationController(rootViewController: fifthVC)
         

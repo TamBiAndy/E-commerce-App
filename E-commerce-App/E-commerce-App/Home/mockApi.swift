@@ -435,3 +435,93 @@ let similar = """
 ]
 }
 """
+
+let cart = """
+{
+"id": "123456",
+"shoppingList": [
+{
+"id": "1234",
+"image":
+"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+"productName": "Women’s Casual Wear",
+"variations": [
+"Black",
+"Red"
+],
+"rating": 4.8,
+"currentPrice": 34.00,
+"originPrice": 64.00,
+"uptoPercent": "33",
+"totalOrder": 1
+},
+{
+"id": "1234",
+"image":
+"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+"productName": "Men’s Jacket",
+"variations": [
+"Green",
+"Gray"
+],
+"rating": 4.7,
+"currentPrice": 45.00,
+"originPrice": 67.00,
+"uptoPercent": "28",
+"totalOrder": 1
+},
+{
+"id": "1234",
+"image":
+"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+"productName": "Men’s Jacket",
+"variations": [
+"Green",
+"Gray"
+],
+"rating": 4.7,
+"currentPrice": 45.00,
+"originPrice": 67.00,
+"uptoPercent": "28",
+"totalOrder": 1
+},
+{
+"id": "1234",
+"image":
+"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+"productName": "Men’s Jacket",
+"variations": [
+"Green",
+"Gray"
+],
+"rating": 4.7,
+"currentPrice": 45.00,
+"originPrice": 67.00,
+"uptoPercent": "28",
+"totalOrder": 1
+}
+]
+}
+"""
+let address = """
+{
+"id": "123456",
+"address": [
+{
+    "address": "216 St Paul's Rd, London N1 2LL, UK",
+    "contact": " +44-784232"
+},
+{
+    "address": "312 St Paul's Rd, London N1 2LL, UK",
+    "contact": " +44-784556"
+},
+{
+    "address": "345 St Paul's Rd, London N1 2LL, UK",
+    "contact": " +44-784786"
+}
+]
+}
+
+"""
+
+

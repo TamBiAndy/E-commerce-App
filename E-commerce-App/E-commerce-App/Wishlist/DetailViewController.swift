@@ -420,7 +420,9 @@ class DetailViewController: UIViewController {
     }
     
     @objc func goToCart() {
-        
+        let viewModel = CartViewModel()
+        let nextVC = CartViewController(viewModel: viewModel)
+        navigationController?.pushViewController(nextVC, animated: true)
     }
     
     @objc func sizeButtonTapped(sender: UIButton) {
