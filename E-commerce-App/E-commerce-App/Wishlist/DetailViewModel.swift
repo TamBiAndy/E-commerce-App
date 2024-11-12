@@ -8,8 +8,6 @@
 import UIKit
 import Moya
 
-import Foundation
-
 struct ProductDetailResponse: Codable {
   struct Product: Codable {
     let id: String?
@@ -30,7 +28,7 @@ struct ProductDetailResponse: Codable {
 }
 
 class DetailViewModel {
-    let provider = MoyaProvider<APITargetHomeVC>()
+    let provider = MoyaProvider<APITargetHomeVC>(stubClosure: MoyaProvider.delayedStub(2))
     
     var productId: String?
     

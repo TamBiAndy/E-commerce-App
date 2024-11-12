@@ -22,7 +22,7 @@ struct LoginResponse: Codable {
 
 class SignInViewModel {
     
-    let provider = MoyaProvider<APITarget>()
+    let provider = MoyaProvider<APITarget>(stubClosure: MoyaProvider.delayedStub(2))
 
     
     func isValidPassword(password: String) throws -> Bool {

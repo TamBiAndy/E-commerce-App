@@ -37,7 +37,7 @@ struct SaleOffInfor: Codable {
 }
 
 class AllFeatureViewModel {
-   let provider = MoyaProvider<APITargetHomeVC>()
+   let provider = MoyaProvider<APITargetHomeVC>(stubClosure: MoyaProvider.delayedStub(2))
     
     var itemCategory: [ItemCategory.Category] = []
     var saleOffInfor: [SaleOffInfor.SaleOff] = []

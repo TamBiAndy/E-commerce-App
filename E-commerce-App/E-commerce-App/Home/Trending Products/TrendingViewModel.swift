@@ -23,7 +23,8 @@ struct TrendingResponse: Codable {
     let trending: [Trending]?
 }
 class TrendingViewModel {
-    let provider = MoyaProvider<APITargetHomeVC>()
+    let provider = MoyaProvider<APITargetHomeVC>(stubClosure: MoyaProvider.delayedStub(2))
+    
     var trendingResponse: [TrendingResponse.Trending] = []
     var lastDate: String = ""
     
@@ -33,6 +34,9 @@ class TrendingViewModel {
             case .success(let response):
                 let decoder = JSONDecoder()
                 do {
+                    if let jsonString = String(data: response.data, encoding: .utf8) {
+                        print("JSON Response: \(jsonString)")
+                    }
                     let trendingResponse = try decoder.decode(TrendingResponse.self, from: response.data)
                     self.trendingResponse = trendingResponse.trending ?? []
                     self.lastDate = trendingResponse.lastDate ?? ""

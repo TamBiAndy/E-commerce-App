@@ -9,6 +9,6 @@ import UIKit
 import Moya
 
 class SetupViewModel {
-    let provider = MoyaProvider<APITargetHomeVC>()
+    let provider = MoyaProvider<APITargetHomeVC>(stubClosure: MoyaProvider.delayedStub(2))
     
 }

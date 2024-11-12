@@ -1,0 +1,15 @@
+{
+  "id": "123456",
+  "shoppingBag": {
+    "id": "1234",
+    "image": "https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "productName": "Women’s Casual Wear",
+    "descriptions": "Checked Single-Breasted Blazer",
+    "size": 42,
+    "qty": 1,
+    "deliveryDate": "10 May 2XXX",
+    "orderAmount": 7000,
+    "orderTotal": 7000
+  }
+}
+      

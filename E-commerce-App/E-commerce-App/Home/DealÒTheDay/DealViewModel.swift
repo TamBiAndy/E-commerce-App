@@ -32,7 +32,7 @@ struct DealOffTheDay: Codable {
 }
 
 class DealViewModel {
-    let provider = MoyaProvider<APITargetHomeVC>()
+    let provider = MoyaProvider<APITargetHomeVC>(stubClosure: MoyaProvider.delayedStub(2))
     
     var dealOff: [DealOffTheDay.DealOff] = []
     var timeRemain: String = ""

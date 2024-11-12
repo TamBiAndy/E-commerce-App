@@ -88,7 +88,6 @@ let saleoffInfor = """
     }
   ]
 }
-
 """
 
 let deal = """
@@ -178,7 +177,7 @@ let trending = """
     {
       "id": "465748",
       "image": "https://images.pexels.com/photos/2010018/pexels-photo-2010018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "description": "IWC Schaffhausen 2021 Pilot's Watch \"SIHH 2019\" 44mm",
+      "description": "IWC Schaffhausen 2021 Pilot's Watch "SIHH 2019" 44mm",
       "currentPrice": 650,
       "originPrice": 1599,
       "percentOff": 60
@@ -215,7 +214,7 @@ let trending = """
       "originPrice": 1699,
       "percentOff": 60
     }
-]
+  ]
 }
 """
 let sponser = """
@@ -346,32 +345,32 @@ let mockWishlist = """
 """
 let detail = """
 {
-"id": "123456",
-"productList": {
-"id": "1234",
-"image": [
-"https://images.pexels.com/photos/16304368/pexels-photo-16304368/free-photo-of-nike-off-white-jordan-1-university-blue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-"https://images.pexels.com/photos/16304369/pexels-photo-16304369/free-photo-of-nike-off-white-jordan-1-university-blue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-"https://images.pexels.com/photos/9214280/pexels-photo-9214280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-"https://images.pexels.com/photos/9252069/pexels-photo-9252069.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-"https://images.pexels.com/photos/10195371/pexels-photo-10195371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-],
-"productName": "Nike Sneakers",
-"description": "Vision Alta Men’s Shoes Size (All Colours)",
-"currentPrice": 1599,
-"originPrice": 2999,
-"percentOff": 50,
-"rating": 56890,
-"productDetail": "Perhaps the most iconic sneaker of all-time, this original \"Chicago\"? colorway is the cornerstone to any sneaker collection. Made famous in 1985 by Michael Jordan, the shoe has stood the test of time, becoming the most famous colorway of the Air Jordan 1. This 2015 release saw the ...More",
-"size": [
-"6UK",
-"7UK",
-"8UK",
-"9UK",
-"10UK"
-],
-"deliveryTime": "1 within Hour"
-}
+  "id": "123456",
+  "detail": {
+    "id": "1234",
+    "image": [
+      "https://images.pexels.com/photos/16304368/pexels-photo-16304368/free-photo-of-nike-off-white-jordan-1-university-blue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/16304369/pexels-photo-16304369/free-photo-of-nike-off-white-jordan-1-university-blue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/9214280/pexels-photo-9214280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/9252069/pexels-photo-9252069.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/10195371/pexels-photo-10195371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ],
+    "productName": "Nike Sneakers",
+    "description": "Vision Alta Men’s Shoes Size (All Colours)",
+    "currentPrice": 1599,
+    "originPrice": 2999,
+    "percentOff": 50,
+    "rating": 56890,
+    "productDetail": "Perhaps the most iconic sneaker of all-time, this original \"Chicago\"? colorway is the cornerstone to any sneaker collection. Made famous in 1985 by Michael Jordan, the shoe has stood the test of time, becoming the most famous colorway of the Air Jordan 1. This 2015 release saw the this color is suitable for the shoe and decided make the shoe for both adult and kids",
+    "size": [
+      "6UK",
+      "7UK",
+      "8UK",
+      "9UK",
+      "10UK"
+    ],
+    "deliveryTime": "1 within Hour"
+  }
 }
 """
 let similar = """
@@ -438,69 +437,65 @@ let similar = """
 
 let cart = """
 {
-"id": "123456",
-"shoppingList": [
-{
-"id": "1234",
-"image":
-"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-"productName": "Women’s Casual Wear",
-"variations": [
-"Black",
-"Red"
-],
-"rating": 4.8,
-"currentPrice": 34.00,
-"originPrice": 64.00,
-"uptoPercent": "33",
-"totalOrder": 1
-},
-{
-"id": "1234",
-"image":
-"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-"productName": "Men’s Jacket",
-"variations": [
-"Green",
-"Gray"
-],
-"rating": 4.7,
-"currentPrice": 45.00,
-"originPrice": 67.00,
-"uptoPercent": "28",
-"totalOrder": 1
-},
-{
-"id": "1234",
-"image":
-"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-"productName": "Men’s Jacket",
-"variations": [
-"Green",
-"Gray"
-],
-"rating": 4.7,
-"currentPrice": 45.00,
-"originPrice": 67.00,
-"uptoPercent": "28",
-"totalOrder": 1
-},
-{
-"id": "1234",
-"image":
-"https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-"productName": "Men’s Jacket",
-"variations": [
-"Green",
-"Gray"
-],
-"rating": 4.7,
-"currentPrice": 45.00,
-"originPrice": 67.00,
-"uptoPercent": "28",
-"totalOrder": 1
-}
-]
+  "id": "123456",
+  "shoppingList": [
+    {
+      "id": "1234",
+      "image": "https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "productName": "Women’s Casual Wear",
+      "variations": [
+        "Black",
+        "Red"
+      ],
+      "rating": 4.8,
+      "currentPrice": 34,
+      "originPrice": 64,
+      "uptoPercent": 33,
+      "totalOrder": 1
+    },
+    {
+      "id": "1234",
+      "image": "https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "productName": "Men’s Jacket",
+      "variations": [
+        "Green",
+        "Gray"
+      ],
+      "rating": 4.7,
+      "currentPrice": 45,
+      "originPrice": 67,
+      "uptoPercent": 28,
+      "totalOrder": 1
+    },
+    {
+      "id": "1234",
+      "image": "https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "productName": "Men’s Jacket",
+      "variations": [
+        "Green",
+        "Gray"
+      ],
+      "rating": 4.7,
+      "currentPrice": 45,
+      "originPrice": 67,
+      "uptoPercent": 28,
+      "totalOrder": 1
+    },
+    {
+      "id": "1234",
+      "image": "https://images.pexels.com/photos/29127691/pexels-photo-29127691/free-photo-of-fashionable-woman-at-arc-de-triomphe-paris.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "productName": "Men’s Jacket",
+      "variations": [
+        "Green",
+        "Gray"
+      ],
+      "rating": 4.7,
+      "currentPrice": 45,
+      "originPrice": 67,
+      "uptoPercent": 28,
+      "totalOrder": 1
+    }
+  ]
 }
 """
 let address = """

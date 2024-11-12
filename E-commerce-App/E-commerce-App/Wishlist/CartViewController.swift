@@ -195,6 +195,12 @@ class CartViewController: UIViewController {
 extension CartViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectItem = viewModel.shoppingListResponse[indexPath.row]
+        let productId = selectItem.id
+        let viewModel = ShopBagViewModel(productId: productId)
+        let nextVc = ShoppingBagViewController(viewModel: viewModel)
+        navigationController?.pushViewController(nextVc, animated: true)
+        
+        tabBarController?.tabBar.isHidden = true
     }
 }
 

@@ -47,7 +47,7 @@ struct CreateAccountResponse: Codable {
 }
 
 class CreatAccViewModel {
-    let provider = MoyaProvider<APITarget>()
+    let provider = MoyaProvider<APITarget>(stubClosure: MoyaProvider.delayedStub(2))
     
     func isValidPassword(password: String) throws -> Bool {
         guard !password.isEmpty else { // check empty

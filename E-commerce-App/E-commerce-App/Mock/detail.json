@@ -1,0 +1,28 @@
+{
+  "id": "123456",
+  "detail": {
+    "id": "1234",
+    "image": [
+      "https://images.pexels.com/photos/16304368/pexels-photo-16304368/free-photo-of-nike-off-white-jordan-1-university-blue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/16304369/pexels-photo-16304369/free-photo-of-nike-off-white-jordan-1-university-blue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/9214280/pexels-photo-9214280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/9252069/pexels-photo-9252069.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/10195371/pexels-photo-10195371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ],
+    "productName": "Nike Sneakers",
+    "description": "Vision Alta Men’s Shoes Size (All Colours)",
+    "currentPrice": 1599,
+    "originPrice": 2999,
+    "percentOff": 50,
+    "rating": 56890,
+    "productDetail": "Perhaps the most iconic sneaker of all-time, this original \"Chicago\"? colorway is the cornerstone to any sneaker collection. Made famous in 1985 by Michael Jordan, the shoe has stood the test of time, becoming the most famous colorway of the Air Jordan 1. This 2015 release saw the this color is suitable for the shoe and decided make the shoe for both adult and kids",
+    "size": [
+      "6UK",
+      "7UK",
+      "8UK",
+      "9UK",
+      "10UK"
+    ],
+    "deliveryTime": "1 within Hour"
+  }
+}

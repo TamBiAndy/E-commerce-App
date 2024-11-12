@@ -54,7 +54,7 @@ extension APIError: LocalizedError {
 
 class FindPwViewModel {
     
-    let provider = MoyaProvider<APITarget>()
+    let provider = MoyaProvider<APITarget>(stubClosure: MoyaProvider.delayedStub(2))
     
     func submit(userName: String, completion: @escaping (Result<SuccessResponse, APIError>) -> Void) throws {
         guard !userName.isEmpty else { throw APIError.userNameEmpty }

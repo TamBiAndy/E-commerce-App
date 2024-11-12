@@ -38,7 +38,7 @@ struct ShoppingListResponse: Codable {
 }
 
 class CartViewModel {
-    let provider = MoyaProvider<APITargetHomeVC>()
+    let provider = MoyaProvider<APITargetHomeVC>(stubClosure: MoyaProvider.delayedStub(2))
     
     var addressList: [AddressResponse.Address] = []
     
@@ -101,3 +101,4 @@ class CartViewModel {
         return shoppingListResponse.count
     }
 }
+

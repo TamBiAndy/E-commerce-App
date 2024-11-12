@@ -1,0 +1,46 @@
+{
+  "id": "123456",
+  "lastDate": "29/02/22",
+  "trending": [
+    {
+      "id": "465748",
+      "image": "https://images.pexels.com/photos/2010018/pexels-photo-2010018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "IWC Schaffhausen 2021 Pilot's Watch \"SIHH 2019\" 44mm",
+      "currentPrice": 650,
+      "originPrice": 1599,
+      "percentOff": 60
+    },
+    {
+      "id": "456",
+      "image": "https://images.pexels.com/photos/4876536/pexels-photo-4876536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Labbin White Sneakers For Men and Female",
+      "currentPrice": 650,
+      "originPrice": 1250,
+      "percentOff": 70
+    },
+    {
+      "id": "75689",
+      "image": "https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Mammon Women's Handbag (Set of 3, Beige)",
+      "currentPrice": 150,
+      "originPrice": 1699,
+      "percentOff": 60
+    },
+    {
+      "id": "345678",
+      "image": "https://images.pexels.com/photos/9267589/pexels-photo-9267589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Flat mules for women (with 3cm heels, Beige)",
+      "currentPrice": 650,
+      "originPrice": 1599,
+      "percentOff": 60
+    },
+    {
+      "id": "56789",
+      "image": "https://images.pexels.com/photos/20015773/pexels-photo-20015773/free-photo-of-choice-of-leather-wallets-with-embellishments.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Man Holding a Handmade Brown Leather Wallet",
+      "currentPrice": 750,
+      "originPrice": 1699,
+      "percentOff": 60
+    }
+  ]
+}

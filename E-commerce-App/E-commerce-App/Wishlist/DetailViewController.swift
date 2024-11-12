@@ -225,6 +225,7 @@ class DetailViewController: UIViewController {
             btn.backgroundColor = UIColor(hexString: "F2F2F2")
             btn.frame = .init(x: 0, y: 0, width: 32, height: 32)
             btn.layer.cornerRadius = 16
+            btn.addTarget(self, action: #selector(goToCart), for: .touchUpInside)
             return btn
         }()
         

@@ -23,6 +23,7 @@ enum APITargetHomeVC: TargetType {
     case getSimilarProduct
     case getAddress
     case getProductInCart
+    case getShoppingBag(id: String?)
     
     var baseURL: URL {
         switch self {
@@ -48,6 +49,8 @@ enum APITargetHomeVC: TargetType {
             return URL(string: "https://12cefd4b-355b-41c5-8e48-4ab5776a1526.mock.pstmn.io")!
         case .getAddress, .getProductInCart:
             return URL(string: "https://f10202b9-e3ac-465e-aa9f-6c503c7ce72a.mock.pstmn.io")!
+        case .getShoppingBag:
+            return URL(string: "")!
         }
     }
     
@@ -79,6 +82,8 @@ enum APITargetHomeVC: TargetType {
             return "/cart/Address"
         case .getProductInCart:
             return "/cart/shoppingList"
+        case .getShoppingBag:
+            return "/shoppingBag"
         }
     }
     
@@ -86,7 +91,7 @@ enum APITargetHomeVC: TargetType {
         switch self {
         case .getUserInfor:
             return .get
-        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getProductDetail, .getSimilarProduct, .getAddress, .getProductInCart:
+        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getProductDetail, .getSimilarProduct, .getAddress, .getProductInCart, .getShoppingBag:
             return .get
         }
     }
@@ -95,14 +100,50 @@ enum APITargetHomeVC: TargetType {
         switch self {
         case .getUserInfor(let token):
             return .requestParameters(parameters: ["token": token], encoding: URLEncoding.default)
-        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getSimilarProduct, .getAddress, .getProductInCart:
+        case .getItemDiscovery, .getSaleOffInfor, .getDealOfTheDay, .getSpecialOffer, .getTrendingProduct, .getNewArrival, .getSponserdInfor, .getWishList, .getSimilarProduct, .getAddress, .getProductInCart, .getShoppingBag:
             return .requestParameters(parameters: [:], encoding: URLEncoding.default)
         case .getProductDetail(let id):
+            return .requestParameters(parameters: ["id": id ?? ""], encoding: URLEncoding.default)
+        case .getShoppingBag(let id):
             return .requestParameters(parameters: ["id": id ?? ""], encoding: URLEncoding.default)
         }
     }
     
     var headers: [String : String]? {
         return ["Authorization": "Bearer \(SessionManager.shared.token)"]
+    }
+    
+    var sampleData: Data {
+        switch self {
+        case .getUserInfor:
+            return userInfor.data(using: .utf8)!
+        case .getItemDiscovery:
+            return itemcatefory.data(using: .utf8)!
+        case .getSaleOffInfor:
+            return saleoffInfor.data(using: .utf8)!
+        case .getDealOfTheDay:
+            return deal.data(using: .utf8)!
+        case .getSpecialOffer:
+            return specialOffer.data(using: .utf8)!
+//        case .getTrendingProduct:
+//            return trending.data(using: .utf8)!
+        case .getSponserdInfor:
+            return sponser.data(using: .utf8)!
+        case .getWishList:
+            return mockWishlist.data(using: .utf8)!
+        case .getSimilarProduct:
+            return similar.data(using: .utf8)!
+        case .getAddress:
+            return address.data(using: .utf8)!
+//        case .getProductInCart:
+//            return cart.data(using: .utf8)!
+        default:
+            let fileName = self.path.components(separatedBy: "/").last!
+            guard let url = Bundle.main.url(forResource: fileName, withExtension: "json"),
+                        let data = try? Data(contentsOf: url) else {
+                            return Data()
+                    }
+            return data
+        }
     }
 }
